@@ -1,0 +1,150 @@
+@charset "utf-8";
+body {
+  font-family: 'Raleway';
+  color: black;
+  letter-spacing: .03em;
+  margin: 0px;
+}
+
+/*header*/
+header {
+  height: 80px;
+  width: 100%;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    position: fixed;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+  list-style: none;
+  color: black;
+  font-size: 18px;
+  margin: 0 30px;
+  letter-spacing: 1px;
+  padding: 15px 10px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.nav ul li a:hover {
+  border: 1px solid black;
+  padding: 15px 10px;
+  margin-top: 10px;
+  transition: .3s;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 30%);
+}
+
+.nav ul li a:active {
+  border: 1px solid black;
+  padding: 20px 15px;
+  margin-top: 18px;
+  transition: .2s;
+  box-shadow: 0 1px 4px rgb(0 0 0 / 30%);
+}
+
+/*contents*/
+div#content-wrapper {
+  background-image: url(images/top-image.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: table;
+  width: 100%;
+}
+
+#main-title {
+  font-size: 0%;
+  color: black;
+  letter-spacing: 13px;
+  text-align: center;
+  font-family: 'Snell Roundhand';
+  display: table-cell;
+  vertical-align: middle;
+  opacity: 0;
+}
+span {
+    letter-spacing: 27px;
+}
+#sp-menu {
+  display: none;
+}
+
+@media screen and (max-width: 896px) {
+  body {
+    border: none;
+  }
+.nav {
+    width: 200px;
+    top: 0;
+    height: 300px;
+    position: fixed;
+    background: #211a1a99;
+    z-index: 0;
+    padding: 10px 0;
+}
+.nav ul {
+    height: 100%;
+    flex-flow: column;
+}
+.nav li {
+    height: 20%;
+    list-style: none;
+    font-size: 15px;
+    letter-spacing: 3px;
+    text-align: center;
+}
+  .nav a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+  }
+  #open {
+    font-size: 40px;
+    line-height: 64px;
+    cursor: pointer;
+    position: fixed;
+    left: 10px;
+    color: white;
+  }
+  #close {
+    font-size: 40px;
+    line-height: 64px;
+    cursor: pointer;
+    position: fixed;
+    left: 10px;
+    z-index: 1;
+    color: white;
+    top: 0;
+  }
+  #pc-menu {
+    display: none;
+  }
+  #sp-menu {
+    display: block;
+  }
+  #overlay {
+    display: none;
+  }
+  #close {
+    display: none;
+  }
+}

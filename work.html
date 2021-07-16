@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="portfolio.4.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <title>My portfolio</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>    
+    <script src="js/work.js"></script>
+  </head>
+  <body>
+    <div id="content-wrapper">
+      <header>
+        <div id="pc-menu">
+          <div class="nav">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="profile.html">Profile</a></li>
+              <li><a href="My_skills.html">My skills</a></li>
+              <li><a href="work.html">Works</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div id="sp-menu">
+          <span class="material-icons" id="open" >menu</span>
+          <span class="material-icons" id="close">close</span>
+          <div id="overlay">
+            <div class="nav">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="My_skills.html">My skills</a></li>
+                <li><a href="work.html">Works</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div id="content">
+        <h3 class="content-title">Works</h3>
+        <div class="myportfoli">
+          <div class="works">
+            <img src="images/myworks1.png" class="image-hover btn-prof" data-work="work1" alt="mywork1">
+            <h2>Profile page</h2>
+          </div>
+          <div class="works">
+            <img src="images/myworks2.png" class="image-hover btn-const" data-work="work2" alt="mywork2">
+            <h2>Travel BLog</h2>
+          </div>
+          <div class="works">
+            <img src="images/myworks3.png" class="image-hover btn-dent" data-work="work3" alt="mywork2">
+            <h2>Dental Clinic </h2>
+          </div>
+        </div>
+      </div>
+      <div class="popup popup-work" id="work1">
+        <div class="clum1">
+          <h4 class="clum-title">Work</h4>
+          <p>HTML /CSSの学習を進め初めて制作したWebページです。</p>
+          <h5 class="clum-title">使用言語</h5>
+          <h5 class="clum-title">
+            HTML,CSS
+          </h5>
+        </div>
+        <div class="clum2">
+          <span class="close-btn">
+          <i class="fas fa-times-circle btn"></i>
+          </span>
+          <div class="main-image">
+            <a href="works/Profile/index.html" target=" _blank"><img src="images/myworks1.png" alt="mywork2"></a>
+            <a href="work.html"></a>
+          </div>
+        </div>
+      </div>
+      <div class="popup popup-constract" id="work2">
+        <div class="clum1">
+          <h4 class="clum-title">Work</h4>
+          <p>HTML /CSSの学習を進め初めて3回目の制作したWebページです。JQueryを初めて導入したサイトとなっています。</p>
+          <h5 class="clum-title">使用言語</h5>
+          <h5 class="clum-title">
+            HTML,CSS、JQuery,
+          </h5>
+        </div>
+        <div class="clum2">
+          <span class="close-btn">
+          <i class="fas fa-times-circle btn"></i>
+          </span>
+          <div class="main-image">
+            <a href="works/TrBlog//index.html" target="_blank"><img src="images/myworks2.png" alt="mywork2"></a>
+            <a href="work.html"></a>
+          </div>
+        </div>
+      </div>
+      <div class="popup popup-dental" id="work3">
+        <div class="clum1">
+          <h4 class="clum-title">Dental Clinic</h4>
+          <p>HTML /CSSの学習を進め初めて2回目の制作したWebページです。レスポンスデザインにも導入しております</p>
+          <h5 class="clum-title">使用言語</h5>
+          <h5 class="clum-title">HTML,CSS</h5>
+        </div>
+        <div class="clum2">
+          <span class="close-btn">
+          <i class="fas fa-times-circle btn"></i>
+          </span>
+          <div class="main-image">
+            <a href="works/dental_clinic/index.html" target="_blank"><img src="images/myworks3.png"  alt="mywork2"></a>
+            <a href="work.html"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

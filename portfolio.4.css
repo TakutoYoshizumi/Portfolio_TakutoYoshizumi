@@ -1,0 +1,403 @@
+@charset "utf-8";
+body {
+  font-family: 'Raleway';
+  color: black;
+  letter-spacing: .03em;
+  margin: 0px;
+  height: 100%;
+}
+header {
+  height: 80px;
+  width: 100%;
+}
+.nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  position: fixed;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.7);
+}
+.nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.nav li {
+  list-style: none;
+  color: black;
+  font-size: 18px;
+  margin: 0 30px;
+  letter-spacing: 1px;
+  padding: 15px 10px;
+}
+.nav a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.nav ul li a:hover {
+  border: 1px solid black;
+  padding: 15px 10px;
+  margin-top: 10px;
+  transition: .3s;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 30%);
+}
+.nav ul li a:active {
+  border: 1px solid black;
+  padding: 20px 15px;
+  margin-top: 18px;
+  transition: .2s;
+  box-shadow: 0 1px 4px rgb(0 0 0 / 30%);
+}
+div#content-wrapper {
+  background: url(images/top-back.png);
+  height: auto;
+}
+div#content {
+  width: 100%;
+  height: 130vh;
+}
+h3.content-title {
+  text-align: center;
+  font-family: 'Sofia', cursive;
+  font-size: 3.7rem;
+}
+.myportfoli {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  display: flex;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+.works {
+  width: 45%;
+  margin: 30px 0;
+}
+.myportfoli img {
+  width: 100%;
+  display: block;
+  box-shadow: 0px 5px 15px rgb(0 0 0 / 30%);
+  border-radius: 6px;
+}
+h2 {
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Sofia', cursive;
+  font-size: 1.5em;
+}
+
+/*ポップアップ*/
+
+.popup {
+  height: 60vh;
+  width: 65%;
+  position: fixed;
+  top: 20%;
+  left: 0;
+  display: flex;
+  text-align: center;
+  padding: 10px 20px;
+  margin: auto;
+  right: 0;
+  background: #fafafa;
+}
+.popup-work {
+  border: 3mm ridge #ff9800;
+}
+.popup-constract {
+  border: 3mm ridge #03a9f46e;
+}
+.popup-dental {
+  border: 3mm ridge #5fe0d4;
+}
+.main-image img {
+  width: 90%;
+  border: outset 5px;
+}
+.clum1 {
+  width: 40%;
+  padding: 0 20px;
+  text-align: center;
+  margin: auto 0;
+}
+h4.clum-title {
+  font-size: 35px;
+  margin-bottom: 35px;
+  margin-top: 10px;
+}
+.popup p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  letter-spacing: 4px;
+  line-height: 25px;
+  text-align: left;
+}
+h5.clum-title {
+  font-size: 20px;
+  margin-bottom: 30px;
+  font-weight: normal;
+  margin-top: 0;
+}
+.clum2 {
+  width: 60%;
+  text-align: center;
+  margin: auto;
+}
+span.close-btn {
+  position: absolute;
+  right: 30px;
+  top: 15px;
+}
+.btn {
+  color: #bdb9b9;
+  font-size: 40px;
+  cursor: pointer;
+}
+.btn:hover {
+  color: #797575;
+  ;
+}
+.image-hover {
+  cursor: pointer;
+}
+.image-hover:hover {
+  margin-top: -18px;
+  box-shadow: 8px 6px 7px 2px rgba(0, 0, 0, 0.39) inset, -7px 8px 6px 7px rgba(10, 10, 10, 0.32);
+  transform: translateY(-5px);
+}
+a {
+  text-decoration-color: red;
+}
+#sp-menu {
+  display: block;
+  opacity: 0;
+}
+
+/*スクロールイベント*/
+
+#nav {
+  width: 200px;
+  top: 0;
+  height: 300px;
+  position: fixed;
+  background: #211a1a99;
+  z-index: 1;
+  padding: 10px 0;
+}
+#nav ul {
+  justify-content: center;
+  display: flex;
+  margin: 0;
+  flex-flow: column;
+  padding: 0;
+}
+#nav li {
+  list-style: none;
+  font-size: 15px;
+  padding: 15px 0;
+  letter-spacing: 3px;
+  text-align: center;
+}
+#nav a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+#sp-menu {
+  display: block;
+  opacity: 0;
+}
+button {
+  background: #ffffff00;
+  border: none;
+}
+#open {
+  font-size: 50px;
+  line-height: 64px;
+  cursor: pointer;
+  position: fixed;
+  left: 10px;
+  color: black;
+}
+#close {
+  font-size: 50px;
+  line-height: 64px;
+  cursor: pointer;
+  position: fixed;
+  left: 10px;
+  z-index: 2;
+  color: white;
+  top: 0;
+}
+#overlay {
+  display: none;
+}
+#close {
+  display: none;
+}
+
+/**/
+
+
+/*スマホ 横から	*/
+
+@media screen and (max-width: 896px) {
+  h1#main-title {
+    font-size: 270%;
+  }
+  .myportfoli {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  div#content {
+    height: auto;
+  }
+  .works {
+    width: 70%;
+    margin: 30px 15px;
+  }
+  h2 {
+    margin-top: 20px;
+    font-size: 2em;
+    font-weight: normal;
+  }
+  h3.content-title {
+    font-weight: normal;
+  }
+  .popup {
+    width: 65%;
+    flex-flow: column;
+    height: auto;
+    padding: 30px 20px;
+  }
+  .popup p {
+    font-size: 17px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+  }
+  .clum1 {
+    width: 100%;
+    padding: 0;
+  }
+  .clum2 {
+    width: 80%;
+  }
+  body {
+    border: none;
+  }
+  /*ハンバーガー*/
+  .nav {
+    width: 200px;
+    top: 0;
+    height: 300px;
+    position: fixed;
+    background: #211a1a99;
+    z-index: 0;
+    padding: 10px 0;
+  }
+  .nav ul {
+    height: 100%;
+    flex-flow: column;
+  }
+  .nav li {
+    height: 20%;
+    list-style: none;
+    font-size: 15px;
+    letter-spacing: 3px;
+    text-align: center;
+  }
+  .nav a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+  }
+  #open {
+    font-size: 40px;
+  }
+  #close {
+    font-size: 40px;
+  }
+  #pc-menu {
+    display: none;
+  }
+  #sp-menu {
+    display: block;
+  }
+}
+
+/*スマホ　縦からは */
+
+@media screen and (max-width: 480px) {
+  h3.content-title {
+    font-weight: normal;
+    font-size: 2.7rem;
+  }
+  .works {
+    width: 90%;
+  }
+  h2 {
+    margin-top: 15px;
+    font-size: 1.5em;
+    font-weight: normal;
+  }
+  .myportfoli img {
+    height: 260px;
+  }
+  .popup {
+    width: 70%;
+    top: 10%;
+  }
+  .myportfoli img {
+    height: auto;
+  }
+  .popup-work {
+    border: 2mm ridge #ff9800;
+  }
+  h5.clum-title {
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+  h4.clum-title {
+    font-size: 15px;
+    margin: 0;
+  }
+  .popup p {
+    font-size: 11px;
+    margin: 0;
+    padding: 5px 15px;
+  }
+  .btn {
+    font-size: 35px;
+  }
+  .clum1 {
+    margin: 0;
+  }
+  .clum2 {
+    width: 100%;
+    margin: 0;
+  }
+  .main-image img {
+    width: 90%;
+    border: outset 4px;
+  }
+  span.close-btn {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+  }
+  .nav {
+    width: 135px;
+  }
+  .nav li {
+    font-size: 14px;
+    padding-bottom: 12px;
+  }
+  #close {
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,174 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%;
+}
+
+body {
+    height: 1500px;
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+img {
+    width: 120px;
+}
+/*---------header-----------*/
+div#header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto 100px auto;
+    padding: 0 4%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+h1.seciton-title {
+    margin: 0;
+    width: 120px;
+    line-height: 1px;
+    padding: 10px 0;
+}
+
+#header ul {
+    display: flex;
+    padding: 10px 0;
+    margin: 0;
+}
+
+#header li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+#header li a {
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    background-color: transparent;
+}
+
+#header li a:hover{
+    cursor: pointer;
+    opacity:0.5;
+}
+/*---------Mainvisual-----------*/
+div#mainvisual {
+    margin-bottom: 80px;
+}
+
+#mainvisual img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+/*---------About-----------*/
+h2.title {
+    margin: 0 0 60px 0;
+    border-bottom: 1px solid black;
+    text-align: center;
+    display: inline-block;
+    font-size: 2rem;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about{
+    margin-bottom:100px;
+}
+
+#about img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: 30px;
+}
+
+.content-item {
+    text-align: left;
+}
+
+.content-item h3 {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+.content-item p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/*--------bicycle------*/
+#bicycle img {
+    width: 100%;
+}
+
+#bicycle ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+#bicycle li {
+    width: 32%;
+}
+
+h3.seciton-title {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+#bicycle p {
+    font-size: 14px;
+    margin: 0;
+}
+
+/*---------footer-----------*/
+#footer {
+    text-align: center;
+    font-size: 0.5rem;
+    padding: 10px 0;
+}
+
+#footer p{
+   margin: 0;
+}
+
+/*----レスポンシブデザイン---*/
+@media screen and (max-width:600px){
+    
+    #mainvisual img {
+        height:100vh;
+    }
+    
+    #about.content{
+        flex-direction:column;
+    }
+    
+    #about img{
+        margin-right:0;
+    }
+    
+    #bicycle ul{
+        flex-direction: column;
+    }
+    
+    #bicycle li{
+        width:100%;
+        margin-bottom:30px;
+    }
+ 
+}

@@ -1,0 +1,412 @@
+@charset "utf-8";
+body {
+  font-family: 'Raleway';
+  color: black;
+  letter-spacing: .03em;
+  width: 100%;
+  margin: 0px;
+  height: 100%;
+}
+
+header {
+  height: 80px;
+  background-color: white;
+  width: 100%;
+}
+
+
+.nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    position: fixed;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+  list-style: none;
+  color: black;
+  font-size: 18px;
+  margin: 0 30px;
+  letter-spacing: 1px;
+  padding: 15px 10px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.nav ul li a:hover {
+  border: 1px solid black;
+  padding: 15px 10px;
+  margin-top: 10px;
+  transition: .3s;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 30%);
+}
+
+.nav ul li a:active {
+  border: 1px solid black;
+  padding: 20px 15px;
+  margin-top: 18px;
+  transition: .2s;
+  box-shadow: 0 1px 4px rgb(0 0 0 / 30%);
+}
+
+h3.img-title {
+  color: white;
+  font-size: 30px;
+  text-shadow: 0 4px 0 black;
+  margin-bottom: 10px;
+}
+
+#sp-menu {
+  display: block;
+  opacity: 0;
+}
+
+button {
+  background: #ffffff00;
+  border: none;
+}
+
+.content {
+  height: 100%;
+  width: 100%;
+}
+
+.section-wrapper {
+    margin-top: 50px;
+}
+
+h1.section-title {
+  text-align: center;
+  font-size: 80px;
+  margin: 0;
+  font-family: 'IM Fell French Canon SC', serif;
+  letter-spacing: 10px;
+  position: relative;
+  top: -200px;
+}
+
+.top-section {
+  background: linear-gradient( 45deg, #7be7d7 1%, #7be7d7 40%, #7be7d7 40%, #86a4e3 100%);
+  height: 250px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+p.section-content {
+  width: 450px;
+  margin: 0 auto;
+  font-size: 22px;
+  line-height: 3.6;
+  text-align: left;
+  letter-spacing: 8px;
+
+}
+.skills-wrapper {
+    padding-top: 250px;
+}
+.skills_1 {
+    display: flex;
+    opacity: 0;
+    margin-right: 1500px;
+    overflow:hidden;
+    height:550px;
+}
+
+.desc {
+  width: 60%;
+  height: 550px;
+}
+
+.red {
+  background: linear-gradient( 45deg, #ddb14f 0, #ea6c30 100%);
+}
+
+.skills-description_1 {
+  width: 30%;
+  height: 550px;
+  margin: auto;
+  text-align: center;
+}
+
+.skills_2 {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-left: 1500px;
+  position: relative;
+  margin-top:250px;
+  overflow:hidden;
+  height:550px;
+  
+}
+
+.blue {
+  background: linear-gradient( 45deg, #6ab1d7 0, #33d9de 100%);
+}
+
+.title_blue {
+  color: #28e9ef;
+}
+
+.skills-description_2 {
+ width: 30%;
+  height: 550px;
+  margin: auto;
+  text-align: center;
+}
+
+h3.desc-title {
+    font-size: 35px;
+    font-family: DidotItalic;
+    margin-bottom: 100px;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.title_yellow {
+  color: #e0b15c;
+}
+
+p {
+  margin: 5% 0 0;
+  font-size: 20px;
+  font-family: AvenirRegular;
+  line-height: 2.8;
+  text-align: center;
+  overflow-wrap: normal;
+  letter-spacing: 10px;
+}
+
+.fa, .fas {
+    font-weight: 900;
+    font-size: 60px;
+    color: #7ba3ff;
+    cursor: pointer;
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+}
+
+/*スクロールイベント*/
+  #nav {
+    width: 200px;
+    top: 0;
+    height: 300px;
+    position: fixed;
+    background: #211a1a99;
+    z-index: 1;
+    padding:10px 0;
+  }
+  #nav ul {
+    justify-content: center;
+    display: flex;
+    margin: 0;
+    flex-flow: column;
+    padding: 0;
+  }
+  #nav li {
+    list-style: none;
+    font-size: 15px;
+    padding: 15px 0;
+    letter-spacing: 3px;
+    text-align: center;
+  }
+  #nav a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+  }
+#sp-menu {
+  display: block;
+  opacity: 0;
+}
+
+button {
+  background: #ffffff00;
+  border: none;
+}
+
+  #open {
+    font-size: 50px;
+    line-height: 64px;
+    cursor: pointer;
+    position: fixed;
+    left: 10px;
+    color: black;
+  }
+  #close {
+    font-size: 50px;
+    line-height: 64px;
+    cursor: pointer;
+    position: fixed;
+    left: 10px;
+    z-index: 2;
+    color: white;
+    top: 0;
+  }
+
+  #overlay {
+    display: none;
+  }
+  #close {
+    display: none;
+  }
+/**/
+@media screen and (max-width: 890px) {
+  header {
+    height: 0;
+  }
+.section-wrapper {
+    margin-top: 20px;
+}
+  .top-section {
+    height: 170px;
+    width: 70%;
+  }
+  h1.section-title {
+    font-size: 50px;
+    letter-spacing: 10px;
+    top: -120px;
+  }
+p.section-content {
+    width: 300px;
+    font-size: 16px;
+    line-height: 4;
+    letter-spacing: 7px;
+    top: 0px;
+}
+.skills_1 {
+    z-index: -1;
+    height: 500px;
+    width: 70%;
+}
+.desc {
+    display: inline;
+    margin: 0 auto;
+    position: absolute;
+    width: 70%;
+    height: 500px;
+}
+  .blue {
+    right: 0;
+  }
+  .skills_2 {
+    height: 500px;
+}
+  .skills-description_1, .skills-description_2 {
+position: absolute;
+    width: 70%;
+    height: 500px;
+    padding: 0;
+    margin: 0;
+
+}
+
+h3.desc-title {
+    font-size: 35px;
+    font-family: DidotItalic;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+    letter-spacing: 5px;
+    line-height: 3;
+    margin: 0 60px;
+}
+  /*ボタン*/
+.nav {
+    width: 200px;
+    top: 0;
+    height: 300px;
+    position: fixed;
+    background: #211a1a99;
+    z-index: 0;
+    padding:10px 0;
+}
+.nav ul {
+    height: 100%;
+    flex-flow: column;
+}
+.nav li {
+    height: 20%;
+    list-style: none;
+    font-size: 15px;
+    letter-spacing: 3px;
+    text-align: center;
+}
+  .nav a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+  }
+   #open {
+    font-size: 40px;
+  }
+  #close {
+    font-size: 40px;
+  }
+  #pc-menu {
+    display: none;
+  }
+  #sp-menu {
+    display: block;
+  }  
+}
+
+@media screen and (max-width: 480px) {
+  .top-section {
+    height: 150px;
+    width: 65%;
+  }
+h1.section-title {
+    font-size: 36px;
+    top: -100px;
+}
+p.section-content {
+    width: 220px;
+    font-size: 15px;
+    line-height: 4.5;
+    letter-spacing: 1px;
+    margin-top: 50px;
+}
+.skills_1 ,.skills_2{
+  height: 650px;
+  padding-bottom: 80px;
+}
+.desc {
+    width: 80%;
+    height: 650px;
+}
+.skills-description_1, .skills-description_2 {
+    width: 80%;
+    height: 650px;
+    margin: auto;
+    padding: 0;
+}
+  h3.desc-title {
+    font-size: 30px;
+    margin-bottom: 130px;
+    margin-top: 80px;
+  }
+.fa, .fas {
+    right: 5%;
+    bottom: 0%;
+    left: auto;
+}
+}
