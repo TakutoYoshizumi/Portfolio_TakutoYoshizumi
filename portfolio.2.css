@@ -65,7 +65,7 @@ div#content-wrappper {
   height: 100vh;
 }
 
-/*section1*/
+/*profile*/
 
 .main {
   width: 100%;
@@ -132,7 +132,7 @@ span {
   vertical-align: 20px;
 }
 
-/*section2*/
+/*myinfo*/
 
 .myinfo {
   height: 100%;
@@ -154,7 +154,19 @@ span {
   margin: 50px 0 130px 0;
   text-shadow: 0 4px 0 black;
 }
-
+.key {
+  animation: key 0.5s ease-out 0s 1 forwards;
+}
+@keyframes key {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
 /*slider*/
 
 div#effect {
@@ -173,6 +185,7 @@ div#effect {
   left: 0;
   height: 100%;
   z-index: 0;
+  object-fit: fill;
 }
 h3.img-title {
   color: white;
@@ -462,8 +475,8 @@ button {
     margin: 25px auto 70px;
   }
   div#effect {
-    width: 280px;
+    width: 300px;
     margin: 100px auto 30px;
-    height: 240px;
-  }
+    height: 220px;
+}
 }

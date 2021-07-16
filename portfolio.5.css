@@ -64,6 +64,7 @@ div#content-wrapper {
   background: url(images/contact-img.png);
   background-size: cover;
   background-position-y: -70px;
+  width:100%;
 }
 
 div#container {
@@ -145,7 +146,6 @@ textarea#message {
 
 .btn:hover {
   box-shadow: 0 1px 0 rgba(136, 136, 136, 1);
-  margin-top: 18px;
   box-shadow: none;
   background-color: #07859c;
 }

@@ -46,6 +46,18 @@ $(function () {
         $("#close").css("display", "none");
         $("#open").css("display", "block")
     });
+    //ポップアップ
+    let key = (number) => {
+        $(".key" + number).on("inview", function (event, isInView) {
+            if (isInView) {
+                $(".key" + number).addClass("key");
+            }
+        })
+    }
+    key(1);
+    key(2);
+    key(3);
+    
     // // 画像slider
     let count_btn = 0;
     let length = $("#effect img").length;

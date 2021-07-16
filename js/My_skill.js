@@ -49,24 +49,16 @@ $(function () {　
         $("#open").css("display", "block")
     });
     //スクロールアニメーション
-    scrollStart1 = $(".section-content").offset().top;
-    scrollStart2 = $(".skills-wrapper").offset().top;
-    $(window).scroll(function () {
-        if ($(window).scrollTop() >= scrollStart1) {
-            $(".skills_1").animate({
-                marginRight: "0px",
-                opacity: 1
-            }, 500);
+    $(".skills_1").on("inview", function (event, isInView) {
+        if (isInView) {
+            $(".skills_1").addClass("sliderLeft");
         }
-    });
-    $(window).scroll(function () {
-        if ($(window).scrollTop() >= scrollStart2) {
-            $(".skills_2").animate({
-                marginLeft: "0px",
-                opacity: 1
-            }, 500);
+    })
+    $(".skills_2").on("inview", function (event, isInView) {
+        if (isInView) {
+            $(".skills_2").addClass("sliderRight");
         }
-    });　 
+    }) 
     //ボタン　スクロールアニメーション
     $("#scroll_btn").on({
         "mouseover": () => {
