@@ -15,9 +15,10 @@ $(function(){
     //モーダルイベント
     $("a").click(function (){
         let h = $($(this).find("img")).offset().top;
+        console.log(h);
         $("body").append('<div id="bg">');
         
-        if(width>=800){
+        if(width>=900){
             $("body").append('<div id="pc_photo">')
             
             $("#pc_photo").html("<img>");
@@ -27,7 +28,7 @@ $(function(){
             $("#pc_photo img").attr("height","100%");
             $("#pc_photo img").attr("alt","photo");
             $("#pc_photo img").offset({top:h});
-        }else if(width<=800 && width>=500){
+        }else if(width<=899 && width>=500){
             $("body").append('<div id="sp_photo">')
             
             $("#sp_photo").html("<img>");

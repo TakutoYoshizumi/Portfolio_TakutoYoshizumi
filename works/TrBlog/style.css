@@ -8,6 +8,13 @@ body {
     color: #333;
     font-size: 1rem;
     font-family: 'Noto Sans', 'Noto Sans JP', sans-serif;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+img{
+    object-fit: contain;
 }
 
 /* heaer */
@@ -16,14 +23,7 @@ header {
     z-index: 10;
     background-color: white;
     position: fixed;
-    padding-top: 40px;
-    padding-bottom: 30px;
     transition:padding.3s,font-size.3s;
-}
-
-.small {
-    padding-top:0;
-    padding-bottom:0;
 }
 
 h1 {
@@ -34,6 +34,7 @@ h1 {
 }
 .small h1 {
     font-size: 1.7rem;
+    padding: 5px 15px;
 }
 
 nav {
@@ -45,6 +46,8 @@ nav {
 ul {
     display: flex;
     width: 100%;
+    margin:0;
+    list-style: none;
 }
 
 li {
@@ -287,36 +290,34 @@ h4.section-title {
 }
 #pc_photo{
     position:absolute;
-    top:0;
     left:0;
     right:0;
     bottom:0;
     margin:auto;
-    width: 650px;
-    height:500px;
+    width: 65%;
     z-index: 12;
+    object-fit: cover;
 }
-
 #sp_photo{
     position:absolute;
-    top:0;
     left:0;
     right:0;
     bottom:0;
     margin:auto;
-    width: 450px;
-    height:380px;
+    width: 98%;
     z-index: 12; 
+    object-fit: cover;
 }
+
+
 #small_photo{
     position:absolute;
     left:0;
     right:0;
     bottom:0;
     margin:auto;
-    width: 280px;
-    height:300px;
     z-index: 12; 
+    object-fit: cover;
 }
 
 @media screen and (max-width: 896px) {
