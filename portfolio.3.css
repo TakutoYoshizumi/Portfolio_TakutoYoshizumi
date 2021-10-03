@@ -178,14 +178,15 @@ h3.desc-title {
   color: #e0b15c;
 }
 
-p {
-  margin: 5% 0 0;
-  font-size: 20px;
-  font-family: AvenirRegular;
-  line-height: 2.8;
-  text-align: center;
-  overflow-wrap: normal;
-  letter-spacing: 10px;
+.d-grid {
+    row-gap: 20px;
+    padding: 0;
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+}
+.d-grid li{
+    list-style-type: none;
+    font-size: 20px;
 }
 
 .fa, .fas {
@@ -244,6 +245,7 @@ button {
     position: fixed;
     left: 10px;
     color: black;
+    z-index: 30;
   }
   #close {
     font-size: 50px;
@@ -430,12 +432,19 @@ p.section-content {
 }
   h3.desc-title {
     font-size: 30px;
-    margin-bottom: 130px;
+    margin-bottom: 80px;
     margin-top: 80px;
   }
 .fa, .fas {
     right: 5%;
     bottom: 0%;
     left: auto;
+}
+.d-grid {
+    row-gap: 25px;
+    grid-template-columns: 1fr;
+}
+.d-grid li{
+  font-size: 22px;
 }
 }

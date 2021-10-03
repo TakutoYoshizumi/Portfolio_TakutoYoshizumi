@@ -63,7 +63,6 @@ header {
 div#content-wrapper {
   background: url(images/contact-img.png);
   background-size: cover;
-  background-position-y: -70px;
   width:100%;
 }
 

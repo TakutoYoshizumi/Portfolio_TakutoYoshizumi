@@ -78,10 +78,11 @@ h3.content-title {
   margin: 30px 0;
 }
 .myportfoli img {
-  width: 100%;
-  display: block;
-  box-shadow: 0px 5px 15px rgb(0 0 0 / 30%);
-  border-radius: 6px;
+    transition: all 5s;
+    width: 100%;
+    display: block;
+    box-shadow: 0px 5px 15px rgb(0 0 0 / 30%);
+    border-radius: 6px;
 }
 h2 {
   text-align: center;
